@@ -14,6 +14,7 @@
 		313BAB53285601B000A91B94 /* house.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 313BAB52285601B000A91B94 /* house.usdz */; };
 		313BAB57285601DC00A91B94 /* mountain.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 313BAB56285601DC00A91B94 /* mountain.usdz */; };
 		313BAB592856033000A91B94 /* hut.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 313BAB582856033000A91B94 /* hut.usdz */; };
+		317E5BC928EF712C00E11AC9 /* ViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317E5BC828EF712C00E11AC9 /* ViewHelpers.swift */; };
 		31FAFCAA2854446600BF4B68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FAFCA92854446600BF4B68 /* AppDelegate.swift */; };
 		31FAFCAC2854446600BF4B68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FAFCAB2854446600BF4B68 /* ViewController.swift */; };
 		31FAFCB12854446600BF4B68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FAFCAF2854446600BF4B68 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		313BAB52285601B000A91B94 /* house.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = house.usdz; sourceTree = "<group>"; };
 		313BAB56285601DC00A91B94 /* mountain.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = mountain.usdz; sourceTree = "<group>"; };
 		313BAB582856033000A91B94 /* hut.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = hut.usdz; sourceTree = "<group>"; };
+		317E5BC828EF712C00E11AC9 /* ViewHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewHelpers.swift; sourceTree = "<group>"; };
 		31FAFCA62854446600BF4B68 /* Warli AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Warli AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FAFCA92854446600BF4B68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FAFCAB2854446600BF4B68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		317E5BCA28EF713300E11AC9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				317E5BC828EF712C00E11AC9 /* ViewHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		31FAFC9D2854446600BF4B68 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +135,7 @@
 		31FAFCA82854446600BF4B68 /* Warli AR */ = {
 			isa = PBXGroup;
 			children = (
+				317E5BCA28EF713300E11AC9 /* Helpers */,
 				31FAFCA92854446600BF4B68 /* AppDelegate.swift */,
 				31FAFCAB2854446600BF4B68 /* ViewController.swift */,
 				31134A92286DDC26005911B0 /* resources */,
@@ -289,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317E5BC928EF712C00E11AC9 /* ViewHelpers.swift in Sources */,
 				31FAFCAC2854446600BF4B68 /* ViewController.swift in Sources */,
 				31FAFCAA2854446600BF4B68 /* AppDelegate.swift in Sources */,
 			);

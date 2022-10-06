@@ -15,6 +15,7 @@ class ViewController: UIViewController{
     
     @IBOutlet var addElementButton:UIButton!
     
+    var arCoachingOverlay:ARCoachingOverlayView!
     
     var modelToBeAdded:String?
     
@@ -30,7 +31,9 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAddElementButton()
+        setupArCoachingOverlay(on: self.arView)
         #warning("setupResetButton()")
+        
         // Add the box anchor to the scene
         
         
@@ -105,6 +108,14 @@ class ViewController: UIViewController{
         
         arView.scene.addAnchor(anchorEntity)
         print("entity added")
+    }
+    
+    func setupArCoachingOverlay(on arView:ARView) {
+        self.arCoachingOverlay = ARCoachingOverlayView()
+        arCoachingOverlay.goal = .horizontalPlane
+        arCoachingOverlay.session = arView.session
+        arView.addSubview(arCoachingOverlay)
+        arCoachingOverlay.frame = arView.frame
     }
     
 }
