@@ -12,23 +12,13 @@ import ARKit
 class ViewController: UIViewController{
     
     @IBOutlet var arView: ARView!
-    
     @IBOutlet var addElementButton:UIButton!
-    
     var arCoachingOverlay:ARCoachingOverlayView!
-    
     var modelToBeAdded:String?
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        
-        self.setupARView()
-        
-        //tap to raycast
-        
-    }
     
     override func viewDidLoad() {
+        self.setupARView()
         super.viewDidLoad()
         setupAddElementButton()
         setupArCoachingOverlay(on: self.arView)
